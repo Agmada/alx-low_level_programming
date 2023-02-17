@@ -4,7 +4,7 @@
  * main - main block
  * Description: Write a program that prints all possible
  * combinations of two two-digit numbers.
- * Return : 0
+ * Return: 0
  */
 int main(void)
 {
