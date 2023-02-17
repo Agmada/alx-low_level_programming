@@ -2,7 +2,7 @@
 #include <stdio.h>
 /**
  * main - main block
- * Description: Write a program that prints the alphabet in lowercase, followed by a new line.
+ * Description: A program that prints the alphabet in lowercase, followed by a new line.
  * Return: 0
  */
 int main(void)
