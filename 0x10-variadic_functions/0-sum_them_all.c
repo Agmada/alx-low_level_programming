@@ -9,15 +9,15 @@
  * Return: the result
  */
 
-	int sum_them_all(const unsigned int n, ...);
-	{
-		va_list lists;
-		int sum = 0;
-		unsigned int p;
+int sum_them_all(const unsigned int n, ...);
+{
+	va_list lists;
+	int sum = 0;
+	unsigned int p;
 
-			va_start(lists, n);
-			for (p = 0; p < n; p++ )
-				sum =+ va_arg(lists, sum);
-			va_end(lists);
-			retun(sum);
+		va_start(lists, n);
+		for (p = 0; p < n; p++ )
+			sum =+ va_arg(lists, sum);
+		va_end(lists);
+		retun(sum);
 	}
