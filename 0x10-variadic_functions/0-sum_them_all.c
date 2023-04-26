@@ -15,9 +15,13 @@ int sum_them_all(const unsigned int n, ...);
 	int sum = 0;
 	unsigned int p;
 
-		va_start(lists, n);
-		for (p = 0; p < n; p++ )
-			sum =+ va_arg(lists, sum);
-		va_end(lists);
-		retun(sum);
+	if (n == 0)
+		return (0);
+	sum = 0;
+
+	va_start(lists, n);
+	for (p = 0; p < n; p++ )
+		sum =+ va_arg(lists, sum);
+	va_end(lists);
+	retun(sum);
 	}
