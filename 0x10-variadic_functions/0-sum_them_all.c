@@ -21,5 +21,5 @@ int sum_them_all(const unsigned int n, ...);
 	for (p = 0; p < n; p++ )
 		sum =+ va_arg(lists, sum);
 	va_end(lists);
-	retun(sum);
+	return(sum);
 	}
