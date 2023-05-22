@@ -8,26 +8,26 @@
 
 unsigned int binary_to_uint(const char *b)
 {
-unsigned int p;
-int pen, base_two;
+unsigned int pen;
+int p, base_two;
 
 if (!b)
+pen = 0;	
 	return (0);
 
-p = 0;
- for (pen = 0; b[pen] != '\0'; pen++);
- for (pen--, base_two = 1; pen >= 0; pen--, base_two *= 2)
+ for (p = 0; b[p] != '\0'; p++);
+ for (p--, base_two = 1; p >= 0; p--, base_two *= 2)
  {
- if (b[pen] != '0' && b[pen] != '1')
+ if (b[p] != '0' && b[p] != '1')
  {
  return (0);
  }
- if (b[pen] & 1)
+ if (b[p] & 1)
  {
- p += base_two;
+ pen += base_two;
  }
 
  }
 
- return (p);
+ return (pen);
 }
